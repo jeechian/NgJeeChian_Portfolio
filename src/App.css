@@ -1,0 +1,120 @@
+/* ── APP SHELL ──────────────────────────── */
+.app {
+  background: #080c10;
+  min-height: 100vh;
+}
+
+/* ── SECTION
+   CRITICAL: Do NOT set padding here.
+   Every section uses Tailwind py-24 px-6 md:px-16
+   directly. A CSS section rule with padding will
+   fight Tailwind and cause content to stick left.
+────────────────────────────────────────────── */
+section {
+  width: 100%;
+  /* NO padding here — let Tailwind classes handle it */
+}
+
+/* ── BUTTONS ────────────────────────────── */
+.btn {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 200ms ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #00ff87;
+  color: #080c10;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  color: #080c10;
+}
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #00ff87;
+  color: #00ff87;
+}
+.btn-secondary:hover {
+  background: #00ff87;
+  color: #080c10;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #8b949e;
+}
+.btn-ghost:hover {
+  border-color: rgba(0,255,135,0.4);
+  color: #00ff87;
+}
+
+/* ── CARDS ──────────────────────────────── */
+.card {
+  background: #0d1117;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: border-color 200ms ease;
+}
+.card:hover {
+  border-color: rgba(0,255,135,0.3);
+}
+
+/* ── BADGES / CHIPS ─────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: #8b949e;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  white-space: nowrap;
+}
+.badge-pill {
+  border-radius: 9999px;
+  padding: 0.3rem 0.9rem;
+}
+
+/* ── FOOTER ─────────────────────────────── */
+footer {
+  background: #080c10;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p, footer a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  color: #8b949e;
+}
+footer a:hover { color: #00ff87; }
+
+/* ── CURSOR BLINK ───────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}

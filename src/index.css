@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── RESET ─────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll; /* always show scrollbar — prevents layout shift */
+}
+
+/* ── BODY ───────────────────────────────── */
+body {
+  background-color: #080c10;
+  color: #e2e8f0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── TYPOGRAPHY ─────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "JetBrains Mono", monospace;
+  color: #e2e8f0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  color: #8b949e;
+}
+
+a {
+  color: #8b949e;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+a:hover {
+  color: #00ff87;
+}
+
+/* Force Tailwind font-mono → JetBrains Mono */
+.font-mono {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+/* ── SELECTION ──────────────────────────── */
+::selection {
+  background: rgba(0,255,135,0.2);
+  color: #e2e8f0;
+}
+
+/* ── SCROLLBAR ──────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #161b22; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #00ff87; }
+
+/* ── FORMS ──────────────────────────────── */
+input, textarea, select {
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+input::placeholder, textarea::placeholder {
+  color: #4b5563;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0d1117 inset;
+  -webkit-text-fill-color: #e2e8f0;
+}
+
+/* ── DESIGN TOKENS ──────────────────────── */
+:root {
+  --bg-1: #080c10;
+  --bg-2: #0d1117;
+  --bg-3: #161b22;
+  --accent: #00ff87;
+  --accent-border: rgba(0,255,135,0.3);
+  --border-soft: rgba(255,255,255,0.07);
+  --text-primary: #e2e8f0;
+  --text-muted: #8b949e;
+}
+
+/* ── ANIMATIONS ─────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+.cursor-blink {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
