@@ -29,7 +29,7 @@ const skillGroups = [
   {
     title: "Databases",
     skills: [
-      { name: "MySQL", level: 85 },
+      { name: "MSSQL", level: 85 },
       { name: "MongoDB (self-learned)", level: 70 },
       { name: "Supabase (self-learned)", level: 70 },
     ],
@@ -50,7 +50,7 @@ const skillGroups = [
 
 
 const pillTags = [
-  "React", "Next.js", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "CSS", "ASP.NET", "R Language", "SAS Language", "MySQL", "MongoDB", "Supabase",
+  "React", "Next.js", "Node.js", "Tailwind CSS", "JavaScript", "HTML", "CSS", "ASP.NET", "R Language", "SAS Language", "MSSQL", "MongoDB", "Supabase",
   "C++", "C#", "C", "Python", "Java", "NASM", "Git", "Unity"
 ];
 

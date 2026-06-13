@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import logo from "../assets/signature.png";
+import ResumePDF from "../assets/resume.pdf";
 
 const navLinks = ["home", "about", "skills", "projects", "education", "contact"];
 
@@ -82,7 +83,10 @@ export default function Navbar() {
         </div>
 
         {/* Resume Button — outline style matching screenshots */}
-        <button
+        <a
+          href={ResumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
           className="
             font-mono text-[0.9rem] font-medium
             px-6 py-2 rounded-[6px]
@@ -91,10 +95,11 @@ export default function Navbar() {
             text-[#00ff87]
             transition duration-200 ease
             hover:bg-[#00ff87] hover:text-[#080c10]
+            inline-block text-center
           "
         >
-          Resume
-        </button>
+          Résumé
+        </a>
 
       </div>
     </motion.nav>

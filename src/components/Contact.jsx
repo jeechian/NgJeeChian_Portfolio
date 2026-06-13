@@ -59,7 +59,7 @@ export default function ContactPage() {
           <div className="flex gap-3 mt-8">
             {[
               { icon: <GithubIcon />, href: "https://github.com/jeechian", label: "GitHub" },
-              { icon: <LinkedinIcon />, href: "https://linkedin.com/in/jeechian", label: "LinkedIn" },
+              { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/ng-jee-chian-850449416/", label: "LinkedIn" },
               { icon: <InstagramIcon />, href: "https://instagram.com/jeechian__", label: "Instagram" }
             ].map(({ icon, href, label }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}

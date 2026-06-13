@@ -137,7 +137,7 @@ export default function Hero() {
         >
           {[
             { icon: <GithubIcon />, href: "https://github.com/jeechian", label: "GitHub" },
-            { icon: <LinkedinIcon />, href: "https://linkedin.com/in/jeechian", label: "LinkedIn" },
+            { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/ng-jee-chian-850449416/", label: "LinkedIn" },
             { icon: <MailIcon />, href: "mailto:jeechian17@gmail.com", label: "Email" },
             { icon: <InstagramIcon />, href: "https://instagram.com/jeechian__", label: "Instagram" }
           ].map(({ icon, href, label }) => (
@@ -145,6 +145,7 @@ export default function Hero() {
               key={label}
               href={href}
               aria-label={label}
+              target="_blank" rel="noopener noreferrer"
               className="
                 w-10 h-10 flex items-center justify-center
                 border border-[rgba(255,255,255,0.12)]
