@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import logo from "../assets/signature.png";
-import ResumePDF from "../assets/resume.pdf";
+import ResumePDF from "../assets/Resume.pdf";
 
 const navLinks = ["home", "about", "skills", "projects", "education", "contact"];
 
