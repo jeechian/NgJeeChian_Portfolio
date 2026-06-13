@@ -38,18 +38,6 @@ const timeline = [
     badgeText: "#60a5fa",
   },
   {
-    type: "Education",
-    title: "Diploma in Computer Science",
-    org: "INTI International College Subang",
-    time: "Apr 2023 - Aug 2025",
-    desc: "Studied core computer science fundamentals including object-oriented programming, data structures, and software development principles. ",
-    tags: ["Diploma", "Graduate"],
-    nodeColor: "#00ff87",
-    orgColor: "#00ff87",
-    badgeBg: "rgba(0,255,135,0.15)",
-    badgeText: "#00ff87",
-  },
-  {
     type: "Experience",
     title: "Alumni Sharing Event Speaker",
     org: "INTI International College Subang",
@@ -72,6 +60,18 @@ const timeline = [
     orgColor: "#60a5fa",
     badgeBg: "rgba(96,165,250,0.15)",
     badgeText: "#60a5fa",
+  },
+    {
+    type: "Education",
+    title: "Diploma in Computer Science",
+    org: "INTI International College Subang",
+    time: "Apr 2023 - Aug 2025",
+    desc: "Studied core computer science fundamentals including object-oriented programming, data structures, and software development principles. ",
+    tags: ["Diploma", "Graduate"],
+    nodeColor: "#00ff87",
+    orgColor: "#00ff87",
+    badgeBg: "rgba(0,255,135,0.15)",
+    badgeText: "#00ff87",
   },
 ];
 
