@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CodeIcon, ExternalLinkIcon } from "../assets/Icon";
+import { CodeIcon, ExternalLinkIcon ,CertificateIcon} from "../assets/Icon";
+import certificate from "../assets/certificate.pdf";
 const projectsData = [
   {
     title: "Waking Demon",
@@ -20,15 +21,16 @@ const projectsData = [
     github: "https://github.com/vixwoke/TunePilot",
     live: null,
   },
-  // {
-  //   title: "TrueFlow",
-  //   date: "May 2026",
-  //   type: "Web App",
-  //   desc: "Rust time-series in-memory database crate with sub-millisecond query latency.",
-  //   tags: ["Rust", "Performance"],
-  //   github: "#",
-  //   live: null,
-  // },
+  {
+    title: "TrueFlow",
+    date: "March 2026",
+    type: "Web App",
+    desc: "Developed a prototype web platform to verify water source quality claims. Demonstrated strong critical thinking through idea generation, impact evaluation and feasibility analysis ",
+    tags: ["Hackathon", "Supabase", "React", "Node Js"],
+    github: "https://github.com/williamjonathanliem/trueflow",
+    live: "https://trueflow-flo.vercel.app/",
+    cert:certificate,
+  },
   {
     title: "Data Analysis (UNSW-NB15)",
     date: "Jan 2026",
@@ -96,10 +98,10 @@ export default function Projects() {
 
   return (
     <section className="min-h-screen bg-[#080c10] text-[#e2e8f0] px-6 md:px-16 py-24"
-     id="projects"
+      id="projects"
     >
-        <div className="max-w-[1280px] mx-auto">
- 
+      <div className="max-w-[1280px] mx-auto">
+
         {/* Centered header */}
         <div className="text-center">
           <motion.p
@@ -207,6 +209,17 @@ export default function Projects() {
                     {project.live && project.live !== "#" && (
                       <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-[#00ff87] hover:text-white">
                         <ExternalLinkIcon /> Live
+                      </a>
+                    )}
+
+                    {project.cert && project.cert !== "#" && (
+                      <a
+                        href={project.cert}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-[#fbbf24] hover:text-white"
+                      >
+                        <CertificateIcon /> Certificate
                       </a>
                     )}
                   </div>

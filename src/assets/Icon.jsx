@@ -58,3 +58,9 @@ export const ExternalLinkIcon = () => (
     <line x1="10" y1="14" x2="21" y2="3" />
   </svg>
 );
+export const CertificateIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+    <circle cx="12" cy="8" r="6" />
+    <path d="M9 13.5 7 22l5-3 5 3-2-8.5" />
+  </svg>
+);
