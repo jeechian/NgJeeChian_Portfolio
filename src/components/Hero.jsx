@@ -83,10 +83,10 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="font-sans text-[0.95rem] leading-[1.8] text-[#8b949e] mt-6 max-w-xl"
         >
-          2rd-year Computer Science student at Asia Pacific University (APU). Building scalable web applications, 
-          developing software systems, exploring machine learning models, 
-          and leveraging data analytics to solve real-world problems. Currently seeking 
-          <span className="text-[#00ff87]"> July 2026 internships</span>.
+          2nd-year Computer Science student at Asia Pacific University (APU), specializing in Artificial Intelligence.
+          Passionate about data analytics, machine learning, and AI-driven solutions.
+          Currently seeking <span className="text-[#00ff87]">internship opportunities</span> in{" "}
+          <span className="text-[#00ff87]">Data Analytics, Machine Learning, or AI</span>.
         </motion.p>
 
         {/* Buttons */}

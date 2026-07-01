@@ -78,7 +78,7 @@ export default function Navbar() {
               className={`transition-colors duration-200 ${active === item ? "text-[#00ff87]" : "text-[#8b949e] hover:text-[#00ff87]"
                 }`}
             >
-              {item}
+              {item.charAt(0).toUpperCase() + item.slice(1)}
             </a>
           ))}
         </div>

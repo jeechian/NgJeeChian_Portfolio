@@ -4,10 +4,19 @@ import { CodeIcon, ExternalLinkIcon ,CertificateIcon} from "../assets/Icon";
 import certificate from "../assets/certificate.pdf";
 const projectsData = [
   {
+    title: "Excel Analyzer",
+    date: "June 2026",
+    type: "Data Analysis",
+    desc: "A web application for uploading, previewing, and analyzing Excel files with configurable summaries, column filtering, and group-by capabilities.",
+    tags: ["Next.js", "TypeScript", "React","Data Analysis"],
+    github: "https://github.com/jeechian/excelAnalyzer",
+    live: "https://excel-analyzer-nine.vercel.app",
+  },
+  {
     title: "Waking Demon",
     date: "June 2026",
     type: "Game Dev",
-    desc: "WAKING DEMON is a 2D side-scrolling action game where the player battles a beast in a forest, with gameplay driven by a timed event system. It features ranged and melee combat, a rage transformation mechanic, and multiple endings.",
+    desc: "WAKING DEMON is a 2D action game where the player battles a beast in a forest, with gameplay driven by a timed event system. It features ranged and melee combat, a rage transformation mechanic, and multiple endings.",
     tags: ["Python", "Special Effects", "Pygame"],
     github: "https://github.com/vixwoke/ise_assignment",
     live: null,
@@ -19,7 +28,6 @@ const projectsData = [
     desc: "TunePilot is a web-based Learning Management System (LMS) for music education, designed to provide accessible and structured online learning for students. Built using ASP.NET Web Forms and Microsoft SQL Server LocalDB.",
     tags: ["ASP.NET", "C#", "MSSQL"],
     github: "https://github.com/vixwoke/TunePilot",
-    live: null,
   },
   {
     title: "TrueFlow",

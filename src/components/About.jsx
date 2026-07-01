@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.PNG";
 
 export default function About() {
   return (
@@ -113,6 +113,8 @@ export default function About() {
               style={{
                 border: "1px solid #00ff87",
                 margin: "3px",
+                backgroundColor: "#080c10",
+                paddingTop: "1.5rem",
               }}
             >
               <img

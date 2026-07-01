@@ -49,18 +49,6 @@ const timeline = [
     badgeBg: "rgba(96,165,250,0.15)",
     badgeText: "#60a5fa",
   },
-  {
-    type: "Experience",
-    title: "Employer Project — BYOD Policy & SETA Program",
-    org: "IP Server One",
-    time: "Dec 2024",
-    desc: "Collaborated with IP Server One to design a BYOD policy and SETA program, including the creation of awareness quizzes and specific real-world solutions for the company.",
-    tags: ["Cybersecurity", "BYOD", "SETA"],
-    nodeColor: "#60a5fa",
-    orgColor: "#60a5fa",
-    badgeBg: "rgba(96,165,250,0.15)",
-    badgeText: "#60a5fa",
-  },
     {
     type: "Education",
     title: "Diploma in Computer Science",
